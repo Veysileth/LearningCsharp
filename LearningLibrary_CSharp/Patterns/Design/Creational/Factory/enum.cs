@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Patterns.Design.Creational.Factory
 {
-    internal class Item3 : IItem
+    internal enum ItemType
     {
+        ItemType1,
+        ItemType2,
+        ItemType3
     }
 }

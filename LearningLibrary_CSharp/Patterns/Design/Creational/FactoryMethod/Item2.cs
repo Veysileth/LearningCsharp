@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Patterns.Design.Creational.Factory
+namespace LearningCsharpLibrary.Patterns.Design.Creational.FactoryMethod
 {
-    internal class Item3 : IItem
+    internal class Item2 : IItem
     {
     }
 }

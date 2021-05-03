@@ -18,16 +18,5 @@ namespace LearningCsharpLibrary.Patterns.Design.Creational.Factory
                 _ => null,
             };
         }
-
-        internal interface IItem
-        {
-        }
-
-        internal enum ItemType
-        {
-            ItemType1,
-            ItemType2,
-            ItemType3
-        }
     }
 }
