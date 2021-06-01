@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningLibrary_CSharp.DesignPatterns.CreationalPatterns
+namespace LearningCsharpLibrary.ProgrammingConcepts.AsynchronousProgrammingModel
 {
-    class AbstractFactory
+    class Learning
     {
     }
 }
