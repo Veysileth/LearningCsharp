@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
-    internal class LearningMethods
+    public class LearningMethods : IDemo
     {
         public LearningMethods()
         {
             //ctor
-            SimpleMethod();
+            SimpleMethod("stringarg");
             int returnedInteger = SimpleMethodWithReturnIntegerValue();
         }
 
-        private void SimpleMethod()
+        public void Demo()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SimpleMethod(string stringArg)
         {
         }
 
