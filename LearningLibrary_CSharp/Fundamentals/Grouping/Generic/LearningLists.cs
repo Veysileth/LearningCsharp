@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals.Grouping.Generic
 {
-    internal class LearningLists
+    public class LearningLists : IDemo
     {
         private List<Galaxy> _galaxies = new()
         {

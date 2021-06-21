@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Fundamentals.Grouping
+namespace LearningCsharpLibrary.Fundamentals.Grouping.Generic
 {
-    public class LearningArrays : IDemo
+    public class LearningStacks : IDemo
     {
         public void Demo()
         {
