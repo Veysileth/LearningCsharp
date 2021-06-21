@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals.Classes
 {
-    internal class LearningClass
+    public static class LearningStaticClasses
     {
-
-
-
     }
 }
