@@ -2,11 +2,12 @@
 
 namespace LearningCsharp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LearningCsharpLibrary.Fundamentals.Grouping.Generic.LearningQueues learningQueues = new();
+            learningQueues.Demo();
         }
     }
 }
