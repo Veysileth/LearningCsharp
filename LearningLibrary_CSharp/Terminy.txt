@@ -1,0 +1,8 @@
+﻿
+Value and Reference Types | Wartości bezpośrednie i referencyjne
+
+Polimorphism | Polimorfizm
+
+? | Hermetyzacja
+
+Boxing and Unboxin | Pakowanie i wypakowanie
