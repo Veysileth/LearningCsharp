@@ -14,41 +14,57 @@ namespace LearningCsharpLibrary.Fundamentals
 
         public delegate bool BoolDelegateWithArg(int i);
 
-        private Delegate delegateFunction;
-        private BoolDelegate boolDelegateFunction;
-        private BoolDelegateWithArg boolDelegateWithArgFunction;
+        private Delegate _delegateFunction;
+        private BoolDelegate _boolDelegateFunction;
+        private BoolDelegateWithArg _boolDelegateWithArgFunction;
 
-        private Action action;
-        private Action<int, float> actionIntFloat;
+        private Action _action;
+        private Action<int, float> _actionIntFloat;
 
-        private Func<bool> boolFunction;
-        private Func<int, float, bool> boolFunctionIntFloat;
+        private Func<bool> _boolFunction;
+        private Func<int, float, bool> _boolFunctionIntFloat;
 
         public void Demo()
         {
-            delegateFunction = MyFirstDelegateFunction;
-            delegateFunction();
+            _delegateFunction = MyFirstDelegateFunction;
+            _delegateFunction();
 
-            delegateFunction = MySecondDelegateFunction;
-            delegateFunction();
+            _delegateFunction += MySecondDelegateFunction;
+            _delegateFunction();
 
-            delegateFunction = delegate () { Console.WriteLine("test1"); };
-            delegateFunction();
+            _delegateFunction += delegate () { Console.WriteLine("test1"); };
+            _delegateFunction();
 
-            delegateFunction = () => { Console.WriteLine("test2"); };
-            delegateFunction();
+            _delegateFunction += () => { Console.WriteLine("test2"); };
+            _delegateFunction();
 
-            boolDelegateFunction = MyFirstBoolDelegateFunction;
-            _ = boolDelegateFunction();
+            //Bezpieczne z uwagi na wielowątkowość
+            var action = _action;
 
-            boolDelegateFunction = MySecondBoolDelegateFunction;
-            _ = boolDelegateFunction();
+            //W normalnej sytuacji zwrócenie wyjątku przerywa wykonywanie funkcji pozostałych subskrybentów.
+            foreach (Action handler in action.GetInvocationList())
+            {
+                try
+                {
+                    handler();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
 
-            boolDelegateWithArgFunction = MyFirstBoolDelegateWithArgFunction;
-            _ = boolDelegateWithArgFunction(1);
+            _boolDelegateFunction = MyFirstBoolDelegateFunction;
+            _ = _boolDelegateFunction();
 
-            boolDelegateWithArgFunction = MySecondBoolDelegateWithArgFunction;
-            _ = boolDelegateWithArgFunction(2);
+            _boolDelegateFunction = MySecondBoolDelegateFunction;
+            _ = _boolDelegateFunction();
+
+            _boolDelegateWithArgFunction = MyFirstBoolDelegateWithArgFunction;
+            _ = _boolDelegateWithArgFunction(1);
+
+            _boolDelegateWithArgFunction = MySecondBoolDelegateWithArgFunction;
+            _ = _boolDelegateWithArgFunction(2);
         }
 
         private void MyFirstDelegateFunction()
