@@ -39,9 +39,8 @@ namespace LearningCsharpLibrary.ProgrammingConcepts.Attributes
             // Displaying output.
             foreach (Attribute attr in attrs)
             {
-                if (attr is CustomAttribute)
+                if (attr is CustomAttribute a)
                 {
-                    CustomAttribute a = (CustomAttribute)attr;
                     System.Console.WriteLine("   {0}, version {1:f}", a.GetName(), a.version);
                 }
             }

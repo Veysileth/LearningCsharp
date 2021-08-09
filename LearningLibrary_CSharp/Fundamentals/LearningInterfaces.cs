@@ -42,6 +42,11 @@ namespace LearningCsharpLibrary.Fundamentals
         {
             return (Note, Name, SubName).Equals((other.Note, other.Name, other.SubName));
         }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as LearningInterfaces);
+        }
     }
 
     internal interface ITestableInterface : ITestableSubInterface

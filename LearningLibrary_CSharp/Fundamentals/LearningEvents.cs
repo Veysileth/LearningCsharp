@@ -14,7 +14,21 @@ namespace LearningCsharpLibrary.Fundamentals
 
         private event EventHandler<CustomEventArgs> OnTestCustomEventArgs;
 
-        private class CustomEventArgs : EventArgs
+        private event EventHandler<CustomEventArgs> _OnTestCustomEventArgsWithAddAndRemove;
+
+        public event EventHandler<CustomEventArgs> OnTestCustomEventArgsWithAddAndRemove
+        {
+            add
+            {
+                _OnTestCustomEventArgsWithAddAndRemove = (EventHandler<CustomEventArgs>)System.Delegate.Combine(value, _OnTestCustomEventArgsWithAddAndRemove);
+            }
+            remove
+            {
+                _OnTestCustomEventArgsWithAddAndRemove = (EventHandler<CustomEventArgs>)System.Delegate.Remove(value, _OnTestCustomEventArgsWithAddAndRemove);
+            }
+        }
+
+        public class CustomEventArgs : EventArgs
         {
             public string Name { get; set; }
         }
