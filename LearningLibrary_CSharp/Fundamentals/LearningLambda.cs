@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
-    // UNDONE: Placeholder - fill as learn
-    public class LearningTuples : IDemo
+    // TODO: Get into it
+    public class LearningLambda : IDemo
     {
         public void Demo()
         {
-            Tuple<int, string> typicalTuple = new (1, "a");
-            var methodTuple = Tuple.Create(1, "a");
+            Action<int> action = (msg) => Console.WriteLine(msg);
+            Action<int> action1 = msg => Console.WriteLine(msg);
         }
     }
 }

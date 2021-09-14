@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Patterns.Design.Creational.Prototype
 {
-    public class LearningPrototype : IDemo
+    public class LearningPrototype : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Medium;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             ColorManager colormanager = new ColorManager();

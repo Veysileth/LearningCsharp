@@ -8,8 +8,11 @@ using LearningCsharpLibrary.Patterns.Design.Creational.Builder.Directors;
 
 namespace LearningCsharpLibrary.Patterns.Design.Creational.Builder
 {
-    internal class LearningBuilder : IDemo
+    internal class LearningBuilder : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumLow;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             Report report;

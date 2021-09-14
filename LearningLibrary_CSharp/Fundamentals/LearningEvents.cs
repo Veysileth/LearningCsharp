@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
+    // UNDONE: Placeholder - fill as learn
     public class LearningEvents : IDemo, INotable
     {
         public string Note { get; } = "";

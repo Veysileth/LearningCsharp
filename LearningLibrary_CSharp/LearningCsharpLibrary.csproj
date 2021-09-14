@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DesignPrinciples\" />
     <Folder Include="Patterns\Design\DependencyInjection\" />
     <Folder Include="Patterns\InversionOfControl\" />
     <Folder Include="Patterns\Design\Repository\" />

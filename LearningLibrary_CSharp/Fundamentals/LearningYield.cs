@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory
+namespace LearningCsharpLibrary.Fundamentals
 {
-    internal class SmallItem1 : Thing
+    // TODO: Get into it
+    internal class LearningYield
     {
     }
 }

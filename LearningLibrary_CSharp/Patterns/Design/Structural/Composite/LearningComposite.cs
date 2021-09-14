@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Composite.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Composite
 {
-    public class LearningComposite : IDemo
+    public class LearningComposite : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumHigh;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             IComponent hardDisk = new Leaf("Hard Disk", 2000);

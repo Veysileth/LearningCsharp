@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
-    public class LearningGenerics : IDemo
+    // UNDONE: Placeholder - fill as learn
+    public class LearningGenericTypes : IDemo
     {
         private T[] CreateArray<T>(T first, T second)
         {

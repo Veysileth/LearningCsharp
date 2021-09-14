@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Decorator.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Decorator
 {
-    public class LearningDecorator : IDemo
+    public class LearningDecorator : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Medium;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             ConcreteComponent c = new ConcreteComponent();

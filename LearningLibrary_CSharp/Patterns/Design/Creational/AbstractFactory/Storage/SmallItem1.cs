@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Fundamentals.Grouping.Generic
+namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory.Storage
 {
-    // TODO: Get into it
-    internal class LearningBlockingCollections
+    internal class SmallItem1 : Thing
     {
     }
 }

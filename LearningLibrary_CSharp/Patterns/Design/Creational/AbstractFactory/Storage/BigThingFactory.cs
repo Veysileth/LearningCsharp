@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory
+namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory.Storage
 {
-    internal class SmallThingFactory : ThingFactory
+    internal class BigThingFactory : ThingFactory
     {
         public override Thing GetThing(string thingType)
         {
             return thingType switch
             {
-                "SmallItem1" => new SmallItem1(),
-                "SmallItem2" => new SmallItem2(),
+                "BigItem1" => new BigItem1(),
+                "BigItem2" => new BigItem2(),
                 _ => null
             };
         }

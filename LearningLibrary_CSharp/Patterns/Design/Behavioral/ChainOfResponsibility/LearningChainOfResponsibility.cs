@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.ChainOfResponsibility.Sto
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.ChainOfResponsibility
 {
-    public class LearningChainOfResponsibility : IDemo
+    public class LearningChainOfResponsibility : IDemo, IDesignPattern
     {
+        public static LevelScale UsageFrequency { get; } = LevelScale.MediumLow;
+        public static LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             // The other part of the client code constructs the actual chain.
@@ -28,7 +31,7 @@ namespace LearningCsharpLibrary.Patterns.Design.Behavioral.ChainOfResponsibility
             ClientCode(squirrel);
         }
 
-        public static void ClientCode(AbstractHandler handler)
+        private static void ClientCode(AbstractHandler handler)
         {
             foreach (var food in new List<string> { "Nut", "Banana", "Cup of coffee" })
             {

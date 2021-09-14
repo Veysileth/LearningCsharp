@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Template.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Template
 {
-    public class LearningTemplate : IDemo
+    public class LearningTemplate : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Medium;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             AbstractClass aA = new ConcreteClassA();

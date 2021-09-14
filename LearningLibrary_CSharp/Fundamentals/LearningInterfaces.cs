@@ -7,6 +7,7 @@ using LearningCsharpLibrary.Fundamentals.Classes.Utensils;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
+    // UNDONE: Placeholder - fill as learn
     public class LearningInterfaces : IDemo, INotable, ITestableInterface, IEquatable<LearningInterfaces>
     {
         public string Note { get; } = "represent additional features of a class. I'd call it an \"is\" relationship, like in \"Foo is disposable\", hence the IDisposable interface in C#.";

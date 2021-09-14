@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Proxy.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Proxy
 {
-    public class LearningProxy : IDemo
+    public class LearningProxy : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumHigh;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             Client client = new Client();

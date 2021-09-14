@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Bridge.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Bridge
 {
-    public class LearningBridge : IDemo
+    public class LearningBridge : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumLow;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             Abstraction ab = new RefinedAbstraction();

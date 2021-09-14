@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory
+namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory.Storage
 {
-    internal class SmallItem2 : Thing
+    internal class BigItem1 : Thing
     {
     }
 }

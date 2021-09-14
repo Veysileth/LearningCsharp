@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Patterns.Design.Creational.FluentInterface
 {
-    public class LearningFluentInterface : IDemo
+    public class LearningFluentInterface : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Low;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             Employee employee = new();

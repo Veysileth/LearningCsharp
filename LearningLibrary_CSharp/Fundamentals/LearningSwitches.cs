@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
+    // TODO: Get into it
     internal class LearningSwitches
     {
         /*

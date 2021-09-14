@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Adapter.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Adapter
 {
-    public class LearningAdapter : IDemo
+    public class LearningAdapter : IDemo, IDesignPattern
     {
+        public static LevelScale UsageFrequency { get; } = LevelScale.MediumHigh;
+        public static LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             string[,] employeesArray = new string[5, 4]

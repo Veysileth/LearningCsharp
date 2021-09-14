@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Mediator.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Mediator
 {
-    public class LearningMediator : IDemo
+    public class LearningMediator : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumLow;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             // The client code.

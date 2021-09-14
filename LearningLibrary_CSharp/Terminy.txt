@@ -6,3 +6,10 @@ Polimorphism | Polimorfizm
 ? | Hermetyzacja
 
 Boxing and Unboxin | Pakowanie i wypakowanie
+
+
+Typowanie statyczne
+Typowanie dynamiczne
+
+Typowanie jawne
+Typowanie niejawne (var)

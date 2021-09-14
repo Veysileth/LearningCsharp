@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Iterator
 {
-    public class LearningIterator : IDemo
+    public class LearningIterator : IDemo, IDesignPattern
     {
+        public static LevelScale UsageFrequency { get; } = LevelScale.High;
+        public static LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             ConcreteCollection collection = new ConcreteCollection();

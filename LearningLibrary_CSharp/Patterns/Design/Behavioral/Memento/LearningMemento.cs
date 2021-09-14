@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Memento.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Memento
 {
-    public class LearningMemento : IDemo
+    public class LearningMemento : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Low;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             // Client code.

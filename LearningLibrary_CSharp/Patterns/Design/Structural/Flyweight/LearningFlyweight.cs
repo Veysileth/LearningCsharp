@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Structural.Flyweight.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Structural.Flyweight
 {
-    public class LearningFlyweight : IDemo
+    public class LearningFlyweight : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Low;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             int extrinsicstate = 22;

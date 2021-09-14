@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Patterns.Design.Creational.AbstractFactory
+namespace LearningCsharpLibrary.Patterns
 {
-    internal class BigItem1 : Thing
+    public static class TestLearningClass
     {
     }
 }

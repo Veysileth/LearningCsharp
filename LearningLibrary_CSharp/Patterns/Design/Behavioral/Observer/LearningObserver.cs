@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Observer.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Observer
 {
-    public class LearningObserver : IDemo
+    public class LearningObserver : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.High;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             //Create a Product with Out Of Stock Status

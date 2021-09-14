@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Visitor.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Visitor
 {
-    public class LearningVisitor : IDemo
+    public class LearningVisitor : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Low;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public class Client
         {
             // The client code can run visitor operations over any set of elements

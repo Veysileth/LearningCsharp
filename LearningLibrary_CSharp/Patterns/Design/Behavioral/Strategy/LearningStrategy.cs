@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Strategy.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Strategy
 {
-    public class LearningStrategy : IDemo
+    public class LearningStrategy : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.High;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             // The client code picks a concrete strategy and passes it to the

@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.State.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.State
 {
-    public class LearningState : IDemo
+    public class LearningState : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.Medium;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             var context = new Context(new ConcreteStateA());

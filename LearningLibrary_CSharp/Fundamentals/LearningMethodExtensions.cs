@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCsharpLibrary.Fundamentals.Grouping.Generic
+namespace LearningCsharpLibrary.Fundamentals
 {
     // TODO: Get into it
-    internal class LearningBlockingCollections
+    public class LearningMethodExtensions
     {
     }
 }

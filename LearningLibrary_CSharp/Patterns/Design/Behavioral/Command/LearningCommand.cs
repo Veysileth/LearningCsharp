@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Command.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Command
 {
-    public class LearningCommand : IDemo
+    public class LearningCommand : IDemo, IDesignPattern
     {
+        public static LevelScale UsageFrequency { get; } = LevelScale.MediumHigh;
+        public static LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             // The client code can parameterize an invoker with any commands.

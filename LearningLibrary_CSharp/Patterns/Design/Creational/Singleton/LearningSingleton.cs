@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Patterns.Design.Creational.Singleton
 {
-    public class LearningSingleton : IDemo
+    public class LearningSingleton : IDemo, IDesignPattern
     {
+        public LevelScale UsageFrequency { get; } = LevelScale.MediumHigh;
+        public LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             Singleton s1 = Singleton.GetInstance;

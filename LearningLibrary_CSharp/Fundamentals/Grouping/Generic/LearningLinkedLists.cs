@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals.Grouping.Generic
 {
-    class LearningLinkedLists
+    // TODO: Get into it
+    internal class LearningLinkedLists
     {
     }
 }

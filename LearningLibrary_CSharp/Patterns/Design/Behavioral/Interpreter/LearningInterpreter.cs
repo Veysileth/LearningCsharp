@@ -7,8 +7,11 @@ using LearningCsharpLibrary.Patterns.Design.Behavioral.Interpreter.Storage;
 
 namespace LearningCsharpLibrary.Patterns.Design.Behavioral.Interpreter
 {
-    public class LearningInterpreter : IDemo
+    public class LearningInterpreter : IDemo, IDesignPattern
     {
+        public static LevelScale UsageFrequency { get; } = LevelScale.Low;
+        public static LevelScale Hardness { get; } = LevelScale.Unknown;
+
         public void Demo()
         {
             List<AbstractExpression> objExpressions = new List<AbstractExpression>();
