@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace LearningCsharpLibrary.Fundamentals
 {
-    // TODO: Get into it
-    public class LearningMethodExtensions
+    // UNDONE: Placeholder - fill as learn
+    public class LearningMethodExtensions : IDemo
     {
+        public void Demo()
+        {
+            LearningMethodExtensions learningMethodExtensions = new();
+            int test = learningMethodExtensions.Test();
+        }
+    }
+
+    public static class LearningMethodExtensionsExtension
+    {
+        public static int Test(this LearningMethodExtensions learningMethodExtensions)
+        {
+            return 1;
+        }
     }
 }

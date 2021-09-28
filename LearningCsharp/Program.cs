@@ -4,7 +4,8 @@
     {
         private static void Main(string[] args)
         {
-            LearningCsharpLibrary.Patterns.LearningPatterns.PrintAllPatterns();
+            LearningCsharpLibrary.Fundamentals.LearningDynamic learningDynamic = new();
+            learningDynamic.DynamicKeyword();
         }
     }
 }
